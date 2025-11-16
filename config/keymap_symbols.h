@@ -87,7 +87,7 @@
 #define KC_F11 &kp F11
 #define KC_F12 &kp F12
 #define KC_PRINTSCREEN &kp PRINTSCREEN
-#define KC_SEARCH &kp K_SEARCH // Assuming K_SEARCH is defined or needs to be mapped to a specific HID usage
+#define KC_SEARCH &kp LG(SPACE) // Spotlight shortcut for macOS
 
 // Bluetooth
 #define BT_SEL_0 &bt BT_SEL 0
