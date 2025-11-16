@@ -30,9 +30,9 @@
 #define FNC_MEDIA 3
 #define CYR_LOWER 4
 #define CYR_UPPER 5
-#define BT_LANG 6
-#define CYR_ADDITIONAL_LOWER 7
-#define CYR_ADDITIONAL_UPPER 8
+#define CYR_ADDITIONAL_LOWER 6
+#define CYR_ADDITIONAL_UPPER 7
+#define BT_LANG 8
 
 &sk {
 	// don't release mods on other mods presses
@@ -130,9 +130,9 @@
 			label = "Cyr_Lower";
 			bindings = <
                 UC_CYR_SHORT_I UC_CYR_TS UC_CYR_U UC_CYR_K UC_CYR_E      UC_CYR_N UC_CYR_G UC_CYR_SH UC_CYR_SHCH UC_CYR_Z
-                UC_CYR_F UC_CYR_Y UC_CYR_V UC_CYR_A UC_CYR_P            &lt CYR_UPPER UC_CYR_R UC_CYR_O UC_CYR_L UC_CYR_D UC_CYR_ZH
+                UC_CYR_F UC_CYR_Y UC_CYR_V &lt CYR_UPPER UC_CYR_A UC_CYR_P            UC_CYR_R &lt CYR_UPPER UC_CYR_O UC_CYR_L  UC_CYR_D UC_CYR_ZH
                 UC_CYR_YA UC_CYR_CH UC_CYR_S UC_CYR_M UC_CYR_I          UC_CYR_T UC_CYR_SOFT_SIGN UC_CYR_B UC_CYR_YU UC_CYR_E_REV
-                                &none KC_SPACE &none &none
+                                &none &lt CYR_ADDITIONAL_LOWER KC_SPACE &none &none
 			>;
 		};
 
@@ -143,7 +143,7 @@
                 UC_CYR_SHORT_I_CAPS UC_CYR_TS_CAPS UC_CYR_U_CAPS UC_CYR_K_CAPS UC_CYR_E_CAPS      UC_CYR_N_CAPS UC_CYR_G_CAPS UC_CYR_SH_CAPS UC_CYR_SHCH_CAPS UC_CYR_Z_CAPS
                 UC_CYR_F_CAPS UC_CYR_Y_CAPS UC_CYR_V_CAPS UC_CYR_A_CAPS UC_CYR_P_CAPS            UC_CYR_R_CAPS UC_CYR_O_CAPS UC_CYR_L_CAPS UC_CYR_D_CAPS UC_CYR_ZH_CAPS
                 UC_CYR_YA_CAPS UC_CYR_CH_CAPS UC_CYR_S_CAPS UC_CYR_M_CAPS UC_CYR_I_CAPS          UC_CYR_T_CAPS UC_CYR_SOFT_SIGN_CAPS UC_CYR_B_CAPS UC_CYR_YU_CAPS UC_CYR_E_REV_CAPS
-                                &none KC_SPACE &none &none
+                                &none &lt CYR_ADDITIONAL_UPPER KC_SPACE &none &none
 			>;
 		};
 
@@ -152,7 +152,7 @@
 			label = "Cyr_Add_Lower";
 			bindings = <
                 &none &none &none &none &none                   UC_CYR_GHE_UPTURN &none &none &none UC_CYR_H
-                &none UC_CYR_YI &none &none &none               &none &none &none &none &none
+                &none UC_CYR_YI &none &mo CYR_ADDITIONAL_UPPER &none               &none &mo CYR_ADDITIONAL_UPPER &none &none &none
                 &none &none &none &none &none                   UC_CYR_I_DOT &none &none UC_CYR_HARD_SIGN &none UC_CYR_IE
                                 &none &none &none &none
 			>;
