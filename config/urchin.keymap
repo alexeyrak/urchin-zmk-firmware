@@ -43,6 +43,16 @@
 			quick-tap-ms = <200>;
 			bindings = <&kp>, <&kp>;
 		};
+
+		hm: homerow_mods {
+			compatible = "zmk,behavior-hold-tap";
+			label = "HOMEROW_MODS";
+			#binding-cells = <2>;
+			tapping-term-ms = <220>;
+			quick-tap-ms = <220>;
+			flavor = "tap-preferred";
+			bindings = <&kp>, <&kp>;
+		};
 	};
 
 	macros {
@@ -76,7 +86,7 @@
 			label = "Base";
 			bindings = <
                 &kp Q &kp W &kp E &kp R &kp T           &kp Y &kp U &kp I &kp O &kp P
-                &kp A &kp S &kp D &kp F &kp G           &kp H &kp J &kp K &kp L SYM_SCLN
+                &hm LGUI A &hm LALT S &hm LSHFT D &hm LCTRL F &kp G           &kp H &hm RCTRL J &hm RSHFT K &hm RALT L &hm RGUI SCLN
                 &kp Z &kp X &kp C &kp V &kp B           &kp N &kp M SYM_COMMA SYM_DOT SYM_FSLH
                                 &lt NUM KC_ESC &lt SYM KC_SPACE &lt CYR_LOWER KC_ENT &lt FNC_MEDIA KC_BSPC // Thumb keys with layer-tap
 			>;
@@ -86,9 +96,9 @@
 		num_layer {
 			label = "Num";
 			bindings = <
-                &kp N1 &kp N2 &kp N3 &kp N4 &kp N5      &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-                &none &none &none &none &none           SYM_PLUS SYM_MINUS SYM_ASTERISK SYM_FSLH SYM_EQUAL
                 &none &none &none &none &none           &none &none &none &none &none
+                &hm LGUI N1 &hm LALT N2 &hm LSHFT N3 &hm LCTRL N4 &kp N5      &kp N6 &hm RCTRL N7 &hm RSHFT N8 &hm RALT N9 &hm RGUI N0
+                &none &none &none &none &none           SYM_PLUS SYM_MINUS SYM_ASTERISK SYM_FSLH SYM_EQUAL
                                 &none KC_SPACE KC_TAB KC_BSPC
 			>;
 		};
@@ -120,7 +130,7 @@
 			label = "Cyr_Lower";
 			bindings = <
                 UC_CYR_SHORT_I UC_CYR_TS UC_CYR_U UC_CYR_K UC_CYR_E      UC_CYR_N UC_CYR_G UC_CYR_SH UC_CYR_SHCH UC_CYR_Z
-                UC_CYR_F UC_CYR_Y UC_CYR_V &lt CYR_UPPER UC_CYR_A UC_CYR_P            UC_CYR_R &lt CYR_UPPER UC_CYR_O UC_CYR_L  UC_CYR_D UC_CYR_ZH
+                UC_CYR_F UC_CYR_Y &lt CYR_UPPER UC_CYR_V UC_CYR_A UC_CYR_P            UC_CYR_R UC_CYR_O &lt CYR_UPPER UC_CYR_L  UC_CYR_D UC_CYR_ZH
                 UC_CYR_YA UC_CYR_CH UC_CYR_S UC_CYR_M UC_CYR_I          UC_CYR_T UC_CYR_SOFT_SIGN UC_CYR_B UC_CYR_YU UC_CYR_E_REV
                                 &none &lt CYR_ADDITIONAL_LOWER KC_SPACE &none &none
 			>;
