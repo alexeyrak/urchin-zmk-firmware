@@ -81,7 +81,7 @@
                 &kp Q &kp W &kp E &kp R &kp T           &kp Y &kp U &kp I &kp O &kp P
                 &hm LGUI A &hm LALT S &hm LSHFT D &hm LCTRL F &kp G           &kp H &hm RCTRL J &hm RSHFT K &hm RALT L &hm RGUI SCLN
                 &kp Z &kp X &kp C &kp V &kp B           &kp N &kp M SYM_COMMA SYM_DOT SYM_FSLH
-                                &lt NUM KC_ESC &lt SYM KC_SPACE &lt CYR_LOWER KC_ENT &lt FNC_MEDIA KC_BSPC // Thumb keys with layer-tap
+                                &lt NUM ESC &lt SYM SPACE &lt CYR_LOWER ENTER &lt FNC_MEDIA BSPC // Thumb keys with layer-tap
 			>;
 		};
 
@@ -101,6 +101,7 @@
 			label = "Sym";
 			bindings = <
                 &none &none &none &none &none           &none &none &none &none &none
+                /* SYM_EXCL SYM_AT SYM_HASH SYM_DLLR SYM_PIPE      SYM_AMPS SYM_CARET SYM_ASTERISK SYM_GRAVE SYM_TILDE */
                 SYM_LT SYM_LBKT SYM_LBRC SYM_LPAR SYM_RPAR      SYM_RBRC SYM_RBKT SYM_GT SYM_DQT SYM_SQT
                 &none &none &none SYM_UNDERSCORE SYM_MINUS               SYM_PLUS SYM_EQUAL SYM_PERC &none SYM_BSLH
                                 KC_ESC &none KC_TAB KC_BSPC
@@ -129,17 +130,6 @@
 			>;
 		};
 
-		// Cyrillic Uppercase Layer
-	  // cyr_upper_layer {
-	  // 	label = "Cyr_Upper";
-	  // 	bindings = <
-    //             UC_CYR_SHORT_I_CAPS UC_CYR_TS_CAPS UC_CYR_U_CAPS UC_CYR_K_CAPS UC_CYR_E_CAPS      UC_CYR_N_CAPS UC_CYR_G_CAPS UC_CYR_SH_CAPS UC_CYR_SHCH_CAPS UC_CYR_Z_CAPS
-    //             UC_CYR_F_CAPS UC_CYR_Y_CAPS UC_CYR_V_CAPS UC_CYR_A_CAPS UC_CYR_P_CAPS            UC_CYR_R_CAPS UC_CYR_O_CAPS UC_CYR_L_CAPS UC_CYR_D_CAPS UC_CYR_ZH_CAPS
-    //             UC_CYR_YA_CAPS UC_CYR_CH_CAPS UC_CYR_S_CAPS UC_CYR_M_CAPS UC_CYR_I_CAPS          UC_CYR_T_CAPS UC_CYR_SOFT_SIGN_CAPS UC_CYR_B_CAPS UC_CYR_YU_CAPS UC_CYR_E_REV_CAPS
-    //                             &none &lt CYR_ADDITIONAL_UPPER KC_SPACE &none &none
-	  // 	>;
-	  // };
-
 		// Additional Cyrillic Lowercase Layer
 		cyr_additional_lower_layer {
 			label = "Cyr_Add_Lower";
@@ -151,22 +141,12 @@
 			>;
 		};
 
-		// Additional Cyrillic Uppercase Layer
-	 // cyr_additional_upper_layer {
-	 // 	label = "Cyr_Add_Upper";
-	 // 	bindings = <
-   //             &none &none &none &none &none                   UC_CYR_GHE_UPTURN_CAPS &none &none &none UC_CYR_H_CAPS
-   //             &none UC_CYR_YI_CAPS &none &none &none          &none &none &none &none &none
-   //             &none &none &none &none &none                   UC_CYR_I_DOT_CAPS &none &none UC_CYR_HARD_SIGN_CAPS &none UC_CYR_IE_CAPS
-   //                             &none &none &none &none
-	 // 	>;
-	 // };
-
     // Bluetooth and Language Layer
     bt_lang_layer {
       label = "BT/Lang";
       bindings = <
         &none &none &none &none &none                   &none &none &none &none &none
+        /* UC_MAC &uc UC_LINUX &uc UC_WIN &none BOOTLOADER                   BT_SEL_0 BT_SEL_1 BT_SEL_2 BT_SEL_3 BT_SEL_4 */
         &none &none &none &none &none                   &none &none &none &none &none
         &kp LG(SPACE) &none &none &none &none           &none &none &none &none BT_CLR_KEY
         &none &none &none &none
