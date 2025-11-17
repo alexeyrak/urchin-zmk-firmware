@@ -129,7 +129,7 @@
                 &uc UC_CYR_SHORT_I &uc UC_CYR_TS &uc UC_CYR_U &uc UC_CYR_K &uc UC_CYR_E      &uc UC_CYR_N &uc UC_CYR_G &uc UC_CYR_SH &uc UC_CYR_SHCH &uc UC_CYR_Z
                 &uc UC_CYR_F &uc UC_CYR_Y &uc UC_CYR_V &uc UC_CYR_A &uc UC_CYR_P            &uc UC_CYR_R &uc UC_CYR_O &uc UC_CYR_L  &uc UC_CYR_D &uc UC_CYR_ZH
                 &uc UC_CYR_YA &uc UC_CYR_CH &uc UC_CYR_S &uc UC_CYR_M &uc UC_CYR_I          &uc UC_CYR_T &uc UC_CYR_SOFT_SIGN &uc UC_CYR_B &uc UC_CYR_YU &uc UC_CYR_E_REV
-                                &none &lt CYR_ADDITIONAL_LOWER KC_SPACE &none &none
+                                &none &lt CYR_ADDITIONAL_LOWER SPACE &none &none
 			>;
 		};
 
