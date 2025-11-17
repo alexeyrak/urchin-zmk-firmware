@@ -50,11 +50,11 @@
 #define UC_CYR_IE &uc 0x0454 0x0404 // є Є
 #define UC_CYR_I_DOT &uc 0x0456 0x0406 // і І
 
-// Uppercase Cyrillic
 
 
-
-
+#define UC_MAC &uc UC_SET_MACOS
+#define UC_LINuX &uc UC_SET_LINUX
+#define UC_WIN &uc UC_SET_WIN_COMPOSE
 
 
 
