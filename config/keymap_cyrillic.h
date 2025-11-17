@@ -53,7 +53,7 @@
 
 
 #define UC_MAC &uc UC_SET_MACOS
-#define UC_LINuX &uc UC_SET_LINUX
+#define UC_LINUX &uc UC_SET_LINUX
 #define UC_WIN &uc UC_SET_WIN_COMPOSE
 
 

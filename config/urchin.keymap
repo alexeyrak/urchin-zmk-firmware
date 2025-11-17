@@ -166,7 +166,7 @@
     bt_lang_layer {
       label = "BT/Lang";
       bindings = <
-        UC_MAC &uc UC_LINUX &uc UC_WIN &none BOOTLOADER                   BT_SEL_0 BT_SEL_1 BT_SEL_2 BT_SEL_3 BT_SEL_4
+        &none &none &none &none &none                   &none &none &none &none &none
         &none &none &none &none &none                   &none &none &none &none &none
         &kp LG(SPACE) &none &none &none &none           &none &none &none &none BT_CLR_KEY
         &none &none &none &none
