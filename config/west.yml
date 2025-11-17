@@ -18,7 +18,7 @@ manifest:
       revision: v0.3.0
       import: app/west.yml
     - name: zmk-unicode
-      remote: caksoylar
+      url-base: https://github.com/zmkfirmware
       revision: main
       path: modules/zmk-unicode
     - name: urchin-zmk-module
