@@ -109,7 +109,7 @@
 			bindings = <
                 SYM_EXCL SYM_AT SYM_HASH SYM_DLLR SYM_PIPE      SYM_AMPS SYM_CARET SYM_ASTERISK SYM_GRAVE SYM_TILDE
                 SYM_LT SYM_LBKT SYM_LBRC SYM_LPAR SYM_RPAR      SYM_RBRC SYM_RBKT SYM_GT SYM_DQT SYM_SQT
-                &none &none &none &none SYM_MINUS               &none SYM_PLUS SYM_EQUAL SYM_BSLH &none
+                &none &none &none SYM_BSLH SYM_MINUS               SYM_PLUS SYM_EQUAL &none &none &none
                                 KC_ESC &none KC_TAB KC_BSPC
 			>;
 		};
@@ -119,7 +119,7 @@
 			label = "Fnc/Media";
 			bindings = <
                 KC_BRIGHT_DN KC_VOL_DN KC_MUTE KC_VOL_UP KC_BRIGHT_UP   &none &none &none &none KC_F12
-                KC_SEARCH KC_PREV KC_PLAY_PAUSE KC_NEXT &none           KC_LEFT KC_UP KC_DOWN KC_RIGHT KC_F11
+                KC_SEARCH KC_PREV KC_PLAY_PAUSE KC_NEXT &none           KC_LEFT KC_DOWN KC_UP KC_RIGHT KC_F11
                 KC_F1 KC_F2 KC_F3 KC_F4 KC_F5                           KC_F6 KC_F7 KC_F8 KC_F9 KC_F10
                                 KC_ESC KC_SPACE KC_ENT &none
 			>;
