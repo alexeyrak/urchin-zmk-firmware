@@ -61,24 +61,24 @@
     hm_v: hm_v {
       compatible = "zmk,behavior-hold-tap";
       label = "HRM_V";
-      #binding-cells = <1>; // Ждем 1 аргумент (Shift/Ctrl/...)
+      #binding-cells = <2>;
       flavor = "tap-preferred";
       tapping-term-ms = <200>;
       quick-tap-ms = <200>;
       require-prior-idle-ms = <125>;
-      bindings = <&kp>, <&m_ru_v>; // <-- Ссылка на макрос В
+      bindings = <&kp>, <&m_ru_v>;
     };
 
     // Behavior для Л
     hm_l: hm_l {
       compatible = "zmk,behavior-hold-tap";
       label = "HRM_L";
-      #binding-cells = <1>;
+      #binding-cells = <2>;
       flavor = "tap-preferred";
       tapping-term-ms = <200>;
       quick-tap-ms = <200>;
       require-prior-idle-ms = <125>;
-      bindings = <&kp>, <&m_ru_l>; // <-- Ссылка на макрос Л
+      bindings = <&kp>, <&m_ru_l>;
     };
 	};
 
