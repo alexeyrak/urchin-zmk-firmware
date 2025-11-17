@@ -39,14 +39,14 @@
 #define SYM_TILDE &kp LS(GRAVE) // ~
 
 // Media keys
-#define KC_VOL_UP &consumer C_VOL_UP
-#define KC_VOL_DN &consumer C_VOL_DN
-#define KC_MUTE &consumer C_MUTE
-#define KC_PREV &consumer C_PREV
-#define KC_NEXT &consumer C_NEXT
-#define KC_PLAY_PAUSE &consumer C_PLAY_PAUSE
-#define KC_BRIGHT_UP &consumer C_BRIGHTNESS_INC
-#define KC_BRIGHT_DN &consumer C_BRIGHTNESS_DEC
+#define KC_VOL_UP &kp C_VOL_UP
+#define KC_VOL_DN &kp C_VOL_DN
+#define KC_MUTE &kp C_MUTE
+#define KC_PREV &kp C_PREV
+#define KC_NEXT &kp C_NEXT
+#define KC_PLAY_PAUSE &kp C_PLAY_PAUSE
+#define KC_BRIGHT_UP &kp C_BRIGHTNESS_INC
+#define KC_BRIGHT_DN &kp C_BRIGHTNESS_DEC
 
 // Navigation keys
 #define KC_LEFT &kp LEFT
