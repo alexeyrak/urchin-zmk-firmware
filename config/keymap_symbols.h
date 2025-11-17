@@ -23,7 +23,7 @@
 #define SYM_LBRC &kp LS(LBKT) // {
 #define SYM_RBKT &kp RBKT // ]
 #define SYM_RBRC &kp LS(RBKT) // }
-#define SYM_BSLH &kp BSLH // \
+#define SYM_BSLH &kp BSLH //
 #define SYM_PIPE &kp LS(BSLH) // |
 #define SYM_SCLN &kp SCLN // ;
 #define SYM_COLON &kp LS(SCLN) // :

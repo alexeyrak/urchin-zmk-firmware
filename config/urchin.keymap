@@ -30,6 +30,10 @@
 	ignore-modifiers;
 };
 
+&uc {
+  default-mode = <UC_MODE_MACOS>;
+};
+
 / {
 	behaviors {
 		// Enables holding the first mod-tap key
@@ -100,8 +104,7 @@
 		sym_layer {
 			label = "Sym";
 			bindings = <
-                &none &none &none &none &none           &none &none &none &none &none
-                /* SYM_EXCL SYM_AT SYM_HASH SYM_DLLR SYM_PIPE      SYM_AMPS SYM_CARET SYM_ASTERISK SYM_GRAVE SYM_TILDE */
+                SYM_EXCL SYM_AT SYM_HASH SYM_DLLR SYM_PIPE      SYM_AMPS SYM_CARET SYM_ASTERISK SYM_GRAVE SYM_TILDE
                 SYM_LT SYM_LBKT SYM_LBRC SYM_LPAR SYM_RPAR      SYM_RBRC SYM_RBKT SYM_GT SYM_DQT SYM_SQT
                 &none &none &none SYM_UNDERSCORE SYM_MINUS               SYM_PLUS SYM_EQUAL SYM_PERC &none SYM_BSLH
                                 KC_ESC &none KC_TAB KC_BSPC
@@ -123,9 +126,9 @@
 		cyr_lower_layer {
 			label = "Cyr_Lower";
 			bindings = <
-                UC_CYR_SHORT_I UC_CYR_TS UC_CYR_U UC_CYR_K UC_CYR_E      UC_CYR_N UC_CYR_G UC_CYR_SH UC_CYR_SHCH UC_CYR_Z
-                UC_CYR_F UC_CYR_Y &hm LSHFT UC_CYR_V UC_CYR_A UC_CYR_P            UC_CYR_R UC_CYR_O &hm RSHFT UC_CYR_L  UC_CYR_D UC_CYR_ZH
-                UC_CYR_YA UC_CYR_CH UC_CYR_S UC_CYR_M UC_CYR_I          UC_CYR_T UC_CYR_SOFT_SIGN UC_CYR_B UC_CYR_YU UC_CYR_E_REV
+                &uc UC_CYR_SHORT_I &uc UC_CYR_TS &uc UC_CYR_U &uc UC_CYR_K &uc UC_CYR_E      &uc UC_CYR_N &uc UC_CYR_G &uc UC_CYR_SH &uc UC_CYR_SHCH &uc UC_CYR_Z
+                &uc UC_CYR_F &uc UC_CYR_Y &uc UC_CYR_V &uc UC_CYR_A &uc UC_CYR_P            &uc UC_CYR_R &uc UC_CYR_O &uc UC_CYR_L  &uc UC_CYR_D &uc UC_CYR_ZH
+                &uc UC_CYR_YA &uc UC_CYR_CH &uc UC_CYR_S &uc UC_CYR_M &uc UC_CYR_I          &uc UC_CYR_T U&uc C_CYR_SOFT_SIGN &uc UC_CYR_B &uc UC_CYR_YU &uc UC_CYR_E_REV
                                 &none &lt CYR_ADDITIONAL_LOWER KC_SPACE &none &none
 			>;
 		};
@@ -134,9 +137,9 @@
 		cyr_additional_lower_layer {
 			label = "Cyr_Add_Lower";
 			bindings = <
-                &none &none &none &none &none                   UC_CYR_GHE_UPTURN &none &none &none UC_CYR_H
-                &none UC_CYR_YI &none &hm LSHFT &none               &none &hm RSHFT &none &none &none
-                &none &none &none &none &none                   UC_CYR_I_DOT &none &none UC_CYR_HARD_SIGN &none UC_CYR_IE
+                &none &none &none &none &none                   &uc UC_CYR_GHE_UPTURN &none &none &none &uc UC_CYR_H
+                &none &uc UC_CYR_YI &none &hm LSHFT &none               &none &hm RSHFT &none &none &none
+                &none &none &none &none &none                   &uc UC_CYR_I_DOT &none &none &uc UC_CYR_HARD_SIGN &none &uc UC_CYR_IE
                                 &none &none &none &none
 			>;
 		};
@@ -146,7 +149,7 @@
       label = "BT/Lang";
       bindings = <
         &none &none &none &none &none                   &none &none &none &none &none
-        /* UC_MAC &uc UC_LINUX &uc UC_WIN &none BOOTLOADER                   BT_SEL_0 BT_SEL_1 BT_SEL_2 BT_SEL_3 BT_SEL_4 */
+        &uc UC_SET_MACOS &uc UC_SET_LINUX &uc UC_SET_WIN_COMPOSE &none BOOTLOADER                   BT_SEL_0 BT_SEL_1 BT_SEL_2 BT_SEL_3 BT_SEL_4
         &none &none &none &none &none                   &none &none &none &none &none
         &kp LG(SPACE) &none &none &none &none           &none &none &none &none BT_CLR_KEY
         &none &none &none &none
