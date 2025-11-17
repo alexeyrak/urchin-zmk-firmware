@@ -10,8 +10,8 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/hid_usage.h>
 #include <dt-bindings/zmk/hid_usage_pages.h>
-#include <dt-bindings/zmk/unicode.h>
 #include "keymap_symbols.h"
+#include <behaviors/unicode.dtsi>
 #include "keymap_cyrillic.h"
 
 // Layer definitions
@@ -20,10 +20,10 @@
 #define SYM 2
 #define FNC_MEDIA 3
 #define CYR_LOWER 4
-#define CYR_UPPER 5
-#define CYR_ADDITIONAL_LOWER 6
-#define CYR_ADDITIONAL_UPPER 7
-#define BT_LANG 8
+/* #define CYR_UPPER 5 */
+#define CYR_ADDITIONAL_LOWER 5
+/* #define CYR_ADDITIONAL_UPPER 7 */
+#define BT_LANG 6
 
 &sk {
 	// don't release mods on other mods presses
@@ -123,44 +123,44 @@
 			label = "Cyr_Lower";
 			bindings = <
                 UC_CYR_SHORT_I UC_CYR_TS UC_CYR_U UC_CYR_K UC_CYR_E      UC_CYR_N UC_CYR_G UC_CYR_SH UC_CYR_SHCH UC_CYR_Z
-                UC_CYR_F UC_CYR_Y &lt CYR_UPPER UC_CYR_V UC_CYR_A UC_CYR_P            UC_CYR_R UC_CYR_O &lt CYR_UPPER UC_CYR_L  UC_CYR_D UC_CYR_ZH
+                UC_CYR_F UC_CYR_Y &hm LSHFT UC_CYR_V UC_CYR_A UC_CYR_P            UC_CYR_R UC_CYR_O &hm RSHFT UC_CYR_L  UC_CYR_D UC_CYR_ZH
                 UC_CYR_YA UC_CYR_CH UC_CYR_S UC_CYR_M UC_CYR_I          UC_CYR_T UC_CYR_SOFT_SIGN UC_CYR_B UC_CYR_YU UC_CYR_E_REV
                                 &none &lt CYR_ADDITIONAL_LOWER KC_SPACE &none &none
 			>;
 		};
 
 		// Cyrillic Uppercase Layer
-		cyr_upper_layer {
-			label = "Cyr_Upper";
-			bindings = <
-                UC_CYR_SHORT_I_CAPS UC_CYR_TS_CAPS UC_CYR_U_CAPS UC_CYR_K_CAPS UC_CYR_E_CAPS      UC_CYR_N_CAPS UC_CYR_G_CAPS UC_CYR_SH_CAPS UC_CYR_SHCH_CAPS UC_CYR_Z_CAPS
-                UC_CYR_F_CAPS UC_CYR_Y_CAPS UC_CYR_V_CAPS UC_CYR_A_CAPS UC_CYR_P_CAPS            UC_CYR_R_CAPS UC_CYR_O_CAPS UC_CYR_L_CAPS UC_CYR_D_CAPS UC_CYR_ZH_CAPS
-                UC_CYR_YA_CAPS UC_CYR_CH_CAPS UC_CYR_S_CAPS UC_CYR_M_CAPS UC_CYR_I_CAPS          UC_CYR_T_CAPS UC_CYR_SOFT_SIGN_CAPS UC_CYR_B_CAPS UC_CYR_YU_CAPS UC_CYR_E_REV_CAPS
-                                &none &lt CYR_ADDITIONAL_UPPER KC_SPACE &none &none
-			>;
-		};
+	  // cyr_upper_layer {
+	  // 	label = "Cyr_Upper";
+	  // 	bindings = <
+    //             UC_CYR_SHORT_I_CAPS UC_CYR_TS_CAPS UC_CYR_U_CAPS UC_CYR_K_CAPS UC_CYR_E_CAPS      UC_CYR_N_CAPS UC_CYR_G_CAPS UC_CYR_SH_CAPS UC_CYR_SHCH_CAPS UC_CYR_Z_CAPS
+    //             UC_CYR_F_CAPS UC_CYR_Y_CAPS UC_CYR_V_CAPS UC_CYR_A_CAPS UC_CYR_P_CAPS            UC_CYR_R_CAPS UC_CYR_O_CAPS UC_CYR_L_CAPS UC_CYR_D_CAPS UC_CYR_ZH_CAPS
+    //             UC_CYR_YA_CAPS UC_CYR_CH_CAPS UC_CYR_S_CAPS UC_CYR_M_CAPS UC_CYR_I_CAPS          UC_CYR_T_CAPS UC_CYR_SOFT_SIGN_CAPS UC_CYR_B_CAPS UC_CYR_YU_CAPS UC_CYR_E_REV_CAPS
+    //                             &none &lt CYR_ADDITIONAL_UPPER KC_SPACE &none &none
+	  // 	>;
+	  // };
 
 		// Additional Cyrillic Lowercase Layer
 		cyr_additional_lower_layer {
 			label = "Cyr_Add_Lower";
 			bindings = <
-                &none &none &none &none &none                   UC_CYR_GHE_UPTURN &none &none &none UC_CYR_H
-                &none UC_CYR_YI &none &mo CYR_ADDITIONAL_UPPER &none               &none &mo CYR_ADDITIONAL_UPPER &none &none &none
+                &uc UC_SET_MACOS &uc UC_SET_LINUX &uc UC_SET_WINDOWS &none &none                   UC_CYR_GHE_UPTURN &none &none &none UC_CYR_H
+                &none UC_CYR_YI &none &hm LSHFT &none               &none &hm RSHFT &none &none &none
                 &none &none &none &none &none                   UC_CYR_I_DOT &none &none UC_CYR_HARD_SIGN &none UC_CYR_IE
                                 &none &none &none &none
 			>;
 		};
 
 		// Additional Cyrillic Uppercase Layer
-		cyr_additional_upper_layer {
-			label = "Cyr_Add_Upper";
-			bindings = <
-                &none &none &none &none &none                   UC_CYR_GHE_UPTURN_CAPS &none &none &none UC_CYR_H_CAPS
-                &none UC_CYR_YI_CAPS &none &none &none          &none &none &none &none &none
-                &none &none &none &none &none                   UC_CYR_I_DOT_CAPS &none &none UC_CYR_HARD_SIGN_CAPS &none UC_CYR_IE_CAPS
-                                &none &none &none &none
-			>;
-		};
+	 // cyr_additional_upper_layer {
+	 // 	label = "Cyr_Add_Upper";
+	 // 	bindings = <
+   //             &none &none &none &none &none                   UC_CYR_GHE_UPTURN_CAPS &none &none &none UC_CYR_H_CAPS
+   //             &none UC_CYR_YI_CAPS &none &none &none          &none &none &none &none &none
+   //             &none &none &none &none &none                   UC_CYR_I_DOT_CAPS &none &none UC_CYR_HARD_SIGN_CAPS &none UC_CYR_IE_CAPS
+   //                             &none &none &none &none
+	 // 	>;
+	 // };
 
     // Bluetooth and Language Layer
     bt_lang_layer {
