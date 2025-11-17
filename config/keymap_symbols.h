@@ -95,5 +95,5 @@
 #define BT_SEL_2 &bt BT_SEL 2
 #define BT_SEL_3 &bt BT_SEL 3
 #define BT_SEL_4 &bt BT_SEL 4
-#define BT_CLR &bt BT_CLR
+#define BT_CLR_KEY &bt BT_CLR
 #define BOOTLOADER &bootloader
