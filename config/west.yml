@@ -15,8 +15,12 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: v0.3.0
       import: app/west.yml
+    - name: zmk-unicode
+      remote: caksoylar
+      revision: main
+      path: modules/zmk-unicode
     - name: urchin-zmk-module
       remote: duckyb
       revision: main
