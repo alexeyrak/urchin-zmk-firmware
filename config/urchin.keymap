@@ -35,8 +35,8 @@
 };
 / {
   chosen {
-        zmk,composition-key = <&kp KC_F18>;
-    };
+    zmk,composition-key = <&kp KC_F18>;
+  };
 	behaviors {
 		// Enables holding the first mod-tap key
 		// by performing a tap-release-hold sequence.
