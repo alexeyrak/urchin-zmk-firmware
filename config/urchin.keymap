@@ -31,7 +31,7 @@
 };
 
 &uc {
-  default-mode = <UC_MODE_MACOS>;
+  default-mode = <UC_MODE_LINUX>;
 };
 / {
   chosen {
