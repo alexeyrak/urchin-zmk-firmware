@@ -31,8 +31,6 @@
 };
 
 
-CONFIG_ZMK_UNICODE_TAP_MS=40
-CONFIG_ZMK_UNICODE_WAIT_MS=40
 &uc {
   default-mode = <UC_MODE_MACOS>;
 };
@@ -87,6 +85,8 @@ CONFIG_ZMK_UNICODE_WAIT_MS=40
 	macros {
     m_ru_v: m_ru_v {
       compatible = "zmk,behavior-macro";
+      wait-ms = <60>;
+      tap-ms = <60>;
       #binding-cells = <0>;
       bindings = <&uc UC_CYR_V>;
     };
