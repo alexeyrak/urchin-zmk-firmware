@@ -147,8 +147,6 @@
 
 		// Function and Media Keys Layer
 		fnc_media_layer {
-                &none &uc UC_CYR_YI &hm LSHFT &none &none       &none &none &hm RSHFT &none &none
-                &none &none &none &none &none                   &uc UC_CYR_I_DOT &none &none &uc UC_CYR_HARD_SIGN &none &uc UC_CYR_IE
 			label = "Fnc/Media";
 			bindings = <
                 KC_BRIGHT_DN KC_VOL_DN KC_MUTE KC_VOL_UP KC_BRIGHT_UP   &none &none &none &none KC_F12
