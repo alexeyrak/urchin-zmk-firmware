@@ -85,8 +85,6 @@
 	macros {
     m_ru_v: m_ru_v {
       compatible = "zmk,behavior-macro";
-      wait-ms = <60>;
-      tap-ms = <60>;
       #binding-cells = <0>;
       bindings = <&uc UC_CYR_V>;
     };
