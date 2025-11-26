@@ -35,7 +35,7 @@
 };
 / {
   chosen {
-    zmk,composition-key = <&kp KC_CAPS>;
+    zmk,composition-key = <&kp KC_MENU>;
   };
 	behaviors {
 		// Enables holding the first mod-tap key
