@@ -33,8 +33,10 @@
 &uc {
   default-mode = <UC_MODE_MACOS>;
 };
-
 / {
+  chosen {
+    zmk,composition-key = <&kp KC_CAPS>;
+  };
 	behaviors {
 		// Enables holding the first mod-tap key
 		// by performing a tap-release-hold sequence.
@@ -136,9 +138,9 @@
 		sym_layer {
 			label = "Sym";
 			bindings = <
-                SYM_EXCL SYM_AT SYM_HASH SYM_DLLR SYM_PIPE      SYM_AMPS SYM_CARET SYM_ASTERISK SYM_GRAVE SYM_TILDE
-                SYM_LT SYM_LBKT SYM_LBRC SYM_LPAR SYM_RPAR      SYM_RBRC SYM_RBKT SYM_GT SYM_DQT SYM_SQT
-                &none &none &none SYM_UNDERSCORE SYM_MINUS               SYM_PLUS SYM_EQUAL SYM_PERC &none SYM_BSLH
+                SYM_EXCL SYM_AT SYM_HASH SYM_DLLR SYM_PIPE      SYM_AMPS SYM_CARET SYM_ASTERISK SYM_GRAVE SYM_DQT
+                SYM_TILDE SYM_LT SYM_LBKT SYM_LBRC SYM_LPAR     SYM_RPAR SYM_RBRC SYM_RBKT SYM_GT  SYM_SQT
+                &none &none &none SYM_UNDERSCORE SYM_MINUS      SYM_PLUS SYM_EQUAL SYM_PERC &none SYM_BSLH
                                 KC_ESC &none KC_TAB KC_BSPC
 			>;
 		};
@@ -170,7 +172,7 @@
 			label = "Cyr_Add_Lower";
 			bindings = <
                 &none &none &none &none &none                   &uc UC_CYR_GHE_UPTURN &none &none &none &uc UC_CYR_H
-                &none &uc UC_CYR_YI &hm LSHFT &none &none               &none &none &hm RSHFT &none &none
+                &none &uc UC_CYR_YI &hm LSHFT &none &none       &none &none &hm RSHFT &none &none
                 &none &none &none &none &none                   &uc UC_CYR_I_DOT &none &none &uc UC_CYR_HARD_SIGN &none &uc UC_CYR_IE
                                 &none &none &none &none
 			>;
