@@ -31,8 +31,6 @@
 };
 
 &uc {
-  wait-ms = <20>;
-  tap-ms = <20>;
   default-mode = <UC_MODE_MACOS>;
 };
 / {
