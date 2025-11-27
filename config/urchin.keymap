@@ -142,9 +142,9 @@
     cyr_additional_lower_layer {
       label = "Cyr_Add";
       bindings = <
-        &none &none &none &none &none                   &none &none &none &none SYM_LBTK
-        &none &none &hm LSHFT &none &none       &none &none &hm RSHFT &none &none
-        &none &none &none &none &none                   &none &none &none &none &none SYM_SQT
+        &none &none &none &none &none                   &none &none &none &none SYM_LBKT
+        &none &none &hm LSHFT &none &none               &none &none &hm RSHFT &none SYM_SQT
+        &none &none &none &none &none                   &none &none &none &none &none
         &none &none &none &none
       >;
     };
