@@ -34,7 +34,7 @@
       #binding-cells = <1>;
       wait-ms = <100>;
       tap-ms = <10>;
-      input-mode = <2>;
+      default-mode = <2>;
     };
 		// Enables holding the first mod-tap key
 		// by performing a tap-release-hold sequence.
