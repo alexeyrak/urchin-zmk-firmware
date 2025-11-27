@@ -107,9 +107,10 @@
     cyrillic_additional_layer {
       label = "Cyr. ad.";
       bindings = <
-        &none &none &none &none &none                   &none &none &none &none SYM_LBKT
-        &none &none &hm LSHFT &none &none               &none &none &hm RSHFT &none SYM_SQT
-        &none &none &none &none &none                   &none &none &none &none &none
+
+        &trans &trans &trans &trans &trans                   &trans &trans &trans &trans SYM_LBKT
+        &trans &trans &trans &trans &trans                   &trans &trans &trans &trans SYM_SQT
+        &trans &trans &trans &trans &trans                   &trans &trans &trans &trans &trans
         &none &none &none &none
       >;
     };
