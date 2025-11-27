@@ -86,6 +86,11 @@
 #define KC_F10 &kp F10
 #define KC_F11 &kp F11
 #define KC_F12 &kp F12
+
+#define KC_F18 &kp F18
+#define KC_F19 &kp F19
+#define KC_LANG &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT
+
 #define KC_PRINTSCREEN &kp PRINTSCREEN
 #define KC_SEARCH &kp LG(SPACE) // Spotlight shortcut for macOS
 

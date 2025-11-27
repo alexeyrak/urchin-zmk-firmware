@@ -12,8 +12,6 @@ manifest:
       # nice-view-gem
     - name: m165437
       url-base: https://github.com/M165437
-    - name: urob
-      url-base: https://github.com/urob
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -25,9 +23,5 @@ manifest:
     - name: nice-view-gem
       remote: m165437
       revision: main
-    - name: zmk-unicode
-      remote: urob
-      revision: v0.3.0 # set to same as ZMK version above
-      revision: v0.3.0
   self:
     path: config
