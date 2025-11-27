@@ -31,10 +31,10 @@
 	behaviors {
     ru: russian_unicode {
       compatible = "zmk,behavior-unicode";
-      #binding-cells = <1>;
+      #binding-cells = <2>;
       wait-ms = <100>;
       tap-ms = <10>;
-      default-mode = <2>;
+      default-mode = <UC_MODE_MACOS>;
     };
 		// Enables holding the first mod-tap key
 		// by performing a tap-release-hold sequence.
