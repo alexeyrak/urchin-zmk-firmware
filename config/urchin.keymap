@@ -12,6 +12,7 @@
 #define SYM 2
 #define FNC_MEDIA 3
 #define SYSTEM_LAYER 4
+#define CYR_ADD 5
 
 &sk {
 	// don't release mods on other mods presses
@@ -74,6 +75,12 @@
 			bindings = <&mo SYSTEM_LAYER>;
 			layers = <BASE>;
 		};
+		combo_cyr_add {
+			timeout-ms = <100>;
+			key-positions = <31 32>;
+			bindings = <&mo CYR_ADD>;
+			layers = <BASE>;
+		};
 	};
 
 	keymap {
@@ -122,8 +129,6 @@
                                 KC_ESC KC_SPACE KC_ENT &none
 			>;
 		};
-
-
     system_layer {
       label = "System";
       bindings = <
@@ -133,5 +138,25 @@
         &none &none &none &none
       >;
     };
-	};
+
+    cyr_additional_lower_layer {
+      label = "Cyr_Add";
+      bindings = <
+        &none &none &none &none &none                   &none &none &none &none SYM_LBTK
+        &none &none &hm LSHFT &none &none       &none &none &hm RSHFT &none &none
+        &none &none &none &none &none                   &none &none &none &none &none SYM_SQT
+        &none &none &none &none
+      >;
+    };
+
+		/* cyrillic_layer */
+		/* 	label = "Cyr"; */
+		/* 	bindings = < */
+		/*               &kp Q &kp W &kp E &kp R &kp T           &kp Y &kp U &kp I &kp O &kp P */
+		/*               &hm LGUI A &hm LALT S &hm LSHFT D &hm LCTRL F &kp G           &kp H &hm RCTRL J &hm RSHFT K &hm RALT L &hm RGUI SCLN */
+		/*               &kp Z &kp X &kp C &kp V &kp B           &kp N &kp M SYM_COMMA SYM_DOT SYM_FSLH */
+		/*                               &none &lt CYR_AD SPACE &none &none */
+		/* 	>; */
+		/* }; */
+  };
 };
