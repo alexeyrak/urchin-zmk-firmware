@@ -12,7 +12,7 @@
 #define SYM 2
 #define FNC_MEDIA 3
 #define SYSTEM_LAYER 4
-#define CYR_ADD 5
+#define CYR_AD 5
 #define CYR 6
 
 &sk {
