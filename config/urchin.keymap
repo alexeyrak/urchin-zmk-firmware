@@ -29,6 +29,13 @@
 };
 / {
 	behaviors {
+    ru: russian_unicode {
+      compatible = "zmk,behavior-unicode";
+      #binding-cells = <1>;
+      wait-ms = <100>;
+      tap-ms = <10>;
+      input-mode = <2>;
+    };
 		// Enables holding the first mod-tap key
 		// by performing a tap-release-hold sequence.
 		// To use it: "&qt KEYCODE1 KEYCODE2"
