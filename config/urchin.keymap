@@ -47,10 +47,9 @@
       compatible = "zmk,behavior-hold-tap";
       label = "CYRILLIC_TAP";
       #binding-cells = <2>;
-      flavor = "tap-preferred";
       tapping-term-ms = <200>;
       quick-tap-ms = <200>;
-      require-prior-idle-ms = <125>;
+      flavor = "tap-preferred";
       bindings = <&cyr_hold>, <&kp>;
     };
 	};
